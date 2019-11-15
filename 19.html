@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>19-Recrusive Function</title>
+    </head>
+    <body>
+    <script>
+        function mundur(a) {
+            document.write(a, " ");
+            a=a-1;
+            if (a>0) {
+                mundur(a);
+            } else {
+                exit();
+            }
+        }
+
+        var angka = prompt("Masukkan Angka");
+        mundur(angka);
+    </script>
+    </body>
+</html>

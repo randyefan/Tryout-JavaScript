@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>24-Stack</title>
+    </head>
+    <body>
+            <input type="text" id="angka"/>
+            <button onclick="tambahQueue()">IN</button>
+            <button onclick="hapusQueue()">OUT</button>
+    <script>
+        var a = [];
+        function tambahQueue () {
+            var b = document.getElementById("angka").value;
+            a.push(b);
+            console.log(a);
+        }
+        function hapusQueue () {
+            a.pop();
+            console.log(a);
+        }
+    </script>
+    </body>
+</html>

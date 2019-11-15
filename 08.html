@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>08-GanjilGenapKelipatan</title>
+    </head>
+    <body>
+    <script>
+        var nilai = 1;
+        var akhir = 1000;
+
+        while (nilai <= akhir) {
+            if(nilai%100 === 0) {
+                document.write(nilai +". Kelipatan Seratus<br>");
+            } else if (nilai%2 === 0 && nilai%5 === 0) {
+                document.write(nilai +". Genap Kelipatan Lima<br>");
+            } else if (nilai%5===0) {
+                document.write(nilai +". Ganjil Kelipatan Lima<br>");
+            } else if (nilai%2===0) {
+                document.write(nilai +". Genap<br>");
+            } else {
+                document.write(nilai +". Ganjil<br>");  
+            }
+            nilai++;
+        }
+    </script>
+    </body>
+</html>

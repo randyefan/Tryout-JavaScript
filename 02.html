@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>02-Grade</title>
+    </head>
+    <body>
+    <script>
+        var grade = prompt("Masukkan Nilai!", "");
+        var nilai;
+        if (grade >= 90) {
+            nilai = 'A';
+        } else if (grade >= 80 && grade <= 89) {
+            nilai = 'B'
+        } else if (grade >= 70 && grade <= 79) {
+            nilai = 'C'
+        } else if (grade >=60 && grade <= 69) {
+            nilai = 'D'
+        } else if (grade <= 59) {
+            nilai = 'E'
+        } else {
+            nilai = 'Error';
+        }
+        document.write("<p> "+ nilai +"</p>");
+    </script>
+    </body>
+</html>

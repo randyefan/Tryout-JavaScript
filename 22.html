@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>22-Temperature Converter</title>
+    </head>
+    <body>
+    <script>
+        function celciusToKelvin(a) {
+            return a+273.15;
+        }
+
+        function kelvinToCelcius(a) {
+            return a-273.15;
+        }
+
+        function fahrenheitToCelcius(a) {
+            return ((a-32)*5)/9;
+        }
+
+        function celciusToFahrenheit(a) {
+            return (1.8*a)+32;
+        }
+
+        function fahrenheitToKelvin(a) {
+            return (((a-32)*5)/9)+273.15;
+        }
+
+        function kelvinToFahrenheit(a) {
+            return (((a-273.15)*9)/5)+32;
+        }
+
+        console.log(kelvinToFahrenheit(203));
+    </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>25-Linear Search</title>
+    </head>
+    <body>
+    <script>
+        const fruits = [
+                'Anggur', 
+                'Durian', 
+                'Tomat', 
+                'Bengkoang', 
+                'Jeruk', 
+                'Pepaya', 
+                'Jambu', 
+                'Manggis', 
+                'Kelapa', 
+                'Timun'
+            ];
+
+            function linearSearch(array, kata) {
+                for (var i=0; i<array.length; i++) {
+                    if (array[i] == kata) {
+                        return i;
+                    }
+                } return null;
+            }
+
+            console.log(linearSearch(fruits, "Jeruk"));
+    </script>
+    </body>
+</html>

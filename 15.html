@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>15-Penjumlahan</title>
+    </head>
+    <body>
+    <script>
+        var number= /^[0-9]+$/;
+        var jumlah= 0;
+        var angka = prompt("Masukkan Angka", "");
+        while (angka != '=') {
+            if (!angka.match(number)) {
+                alert("Bukan angka!");
+                angka = prompt("Masukkan Angka");
+            }
+            jumlah = jumlah+parseInt(angka);
+            angka = prompt("Masukkan Angka");
+        }
+        alert(jumlah);
+    </script>
+    </body>
+</html>

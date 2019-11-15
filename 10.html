@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>10-Add to Array</title>
+    </head>
+    <body>
+    <script>
+        const stuff = ['Meja', 'Buku', 'Topi', 'Baju', 'Kayu'];
+        stuff.splice(0, 0, 'Handuk');
+        stuff.splice(6, 0, 'Celana');
+
+        for (i=0; i<stuff.length; i++) {   
+            document.write(stuff[i] + " ");
+        }
+    </script>
+    </body>
+</html>

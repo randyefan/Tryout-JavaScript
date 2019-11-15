@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>18-Duplicates Remover</title>
+    </head>
+    <body>
+    <script>
+        const kota = ['Jakarta', 'Aceh', 'Malang', 'Medan', 'Bontang', 'Jogja', 'Jakarta', 'Bandung', 'Malang', 'Solo', 'Palembang', 'Bandung'];
+        for (i=0; i<kota.length; i++) {
+            for (j=i+1; j<kota.length; j++) {
+                if(kota[i]===(kota[j])) {
+                    kota.splice(j,1);
+                }
+            }
+        }
+        console.log(kota);
+    </script>
+    </body>
+</html>
